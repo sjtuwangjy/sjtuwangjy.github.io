@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/9 | Hexo</title>
+  <title>jquery随笔 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2017/09/index.html">
+  <meta name="description" content="引用jquery，就是引用一个文件 $是jquery的一个特殊的对象。   $+变量名 表示jquery的对象，但是这还是一个变量名，只是一种命名风格。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jquery随笔">
+<meta property="og:url" content="http://yoursite.com/2017/09/29/jquery随笔/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="引用jquery，就是引用一个文件 $是jquery的一个特殊的对象。   $+变量名 表示jquery的对象，但是这还是一个变量名，只是一种命名风格。">
+<meta property="og:updated_time" content="2017-09-29T08:00:36.560Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="jquery随笔">
+<meta name="twitter:description" content="引用jquery，就是引用一个文件 $是jquery的一个特殊的对象。   $+变量名 表示jquery的对象，但是这还是一个变量名，只是一种命名风格。">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -149,76 +153,202 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-jquery随笔" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      jquery随笔
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/29/jquery随笔/" class="archive-article-date">
+
+        
+        <a href="/2017/09/29/jquery随笔/" class="archive-article-date">
   	<time datetime="2017-09-29T08:00:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-29</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/29/jquery随笔/">jquery随笔</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>引用jquery，就是引用一个文件</li>
+<li>$是jquery的一个特殊的对象。</li>
+</ul>
+<hr>
+<h4 id="变量名-表示jquery的对象，但是这还是一个变量名，只是一种命名风格。"><a href="#变量名-表示jquery的对象，但是这还是一个变量名，只是一种命名风格。" class="headerlink" title="$+变量名 表示jquery的对象，但是这还是一个变量名，只是一种命名风格。"></a>$+变量名 表示jquery的对象，但是这还是一个变量名，只是一种命名风格。</h4><h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h4 id="window-onload-与-document-ready"><a href="#window-onload-与-document-ready" class="headerlink" title="window.onload 与$(document).ready()"></a>window.onload 与$(document).ready()</h4><ul>
+<li>window.onload=function(){}要等页面所以的标签和数据加载完。</li>
+<li>$(document).ready(function(){})只用等标签加载完就开始执行。</li>
+<li>实际开发中，用ready来写页面加载完再执行。</li>
+<li><p>$(document).ready(function(){})简写成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(function()&#123;&#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p>也就是说用jquery写，只用把代码放在$()的括号里就行，确实写得很少。</p>
+</li>
+</ul>
+<hr>
+<h4 id="jquery的方法设置比较灵活，兼容很多种写法，如"><a href="#jquery的方法设置比较灵活，兼容很多种写法，如" class="headerlink" title="jquery的方法设置比较灵活，兼容很多种写法，如"></a>jquery的方法设置比较灵活，兼容很多种写法，如</h4><ul>
+<li>$div.css({“font-size”:”100px”})也可以写成”fontSize”</li>
+<li>“100px”可以写成数字100</li>
+</ul>
+<hr>
+<h4 id="jquery写样式属性"><a href="#jquery写样式属性" class="headerlink" title="jquery写样式属性"></a>jquery写样式属性</h4><ul>
+<li>$div.css(“color”,”red”)</li>
+<li>$div.css({‘font-size’:20,’color’:’red’})</li>
+<li>单个属性不用写成字典形式，多个属性要写成字典形式。</li>
+<li>其实修改的行间样式。说明有的网页全部都是行间样式，有可能就是jquery做的样式。</li>
+</ul>
+<hr>
+<h4 id="jquery读取样式属性值"><a href="#jquery读取样式属性值" class="headerlink" title="jquery读取样式属性值"></a>jquery读取样式属性值</h4><ul>
+<li>var sSize=$div.css(“font-size”);</li>
+<li>原生方法获取不到标签里面没有写上的属性值，必须写上才能读取到。</li>
+</ul>
+<hr>
+<h4 id="jquery-index获取元素索引值"><a href="#jquery-index获取元素索引值" class="headerlink" title="jquery index获取元素索引值"></a>jquery index获取元素索引值</h4><h2 id="是结构中相对兄弟元素的索引值，不是获取对象数组中的索引值。"><a href="#是结构中相对兄弟元素的索引值，不是获取对象数组中的索引值。" class="headerlink" title="- 是结构中相对兄弟元素的索引值，不是获取对象数组中的索引值。"></a>- 是结构中相对兄弟元素的索引值，不是获取对象数组中的索引值。</h2><h4 id="jquery动画"><a href="#jquery动画" class="headerlink" title="jquery动画"></a>jquery动画</h4><ul>
+<li>最基本的是animate函数，可以同时设置多个属性，其他的各种</li>
+<li>animate支持多个动画队列依次执行<blockquote>
+<p>$(selector).animate({…}).animate({…})</p>
+</blockquote>
+</li>
+<li>.stop()语法<blockquote>
+<p>$(selector).stop(stopAll,goToEnd);</p>
+</blockquote>
+</li>
+<li>stop会停止对象的动画，第一个参数是停止所有动画，默认为false，只停止当前的动画，如果后续有动画，就能继续后面的动画，如果设置为TRUE，就停止所有动画。</li>
+<li>第二个参数是停止动画后，是否到达终点。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;js/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt; </div><div class="line">&lt;style&gt; </div><div class="line">.wrap &#123; </div><div class="line">position: relative; </div><div class="line">height: 300px; </div><div class="line">width: 300px; </div><div class="line">border:5px solid #FCF; </div><div class="line">&#125; </div><div class="line">.wrap div &#123; </div><div class="line">position: absolute; </div><div class="line">left: 0;top: 0; </div><div class="line">height: 50px; </div><div class="line">width: 50px; </div><div class="line">background: #FA0; </div><div class="line">&#125; </div><div class="line">&lt;/style&gt; </div><div class="line">&lt;body&gt; </div><div class="line">&lt;input type=&quot;button&quot; id=&quot;btn1&quot; value=&quot;停止当前动画&quot;&gt; </div><div class="line">&lt;input type=&quot;button&quot; id=&quot;btn2&quot; value=&quot;停止所有动画&quot;&gt; </div><div class="line">&lt;input type=&quot;button&quot; id=&quot;btn3&quot; value=&quot;停止所有动画，到达终点&quot;&gt; </div><div class="line">&lt;div class=&quot;wrap&quot;&gt; </div><div class="line">&lt;div&gt;&lt;/div&gt; </div><div class="line">&lt;/div&gt; </div><div class="line">&lt;script&gt; </div><div class="line">function moveX()&#123; </div><div class="line">$(&apos;.wrap div&apos;).animate(&#123;&apos;left&apos;:&apos;250px&apos;&#125;,1000).animate(&#123;&apos;left&apos;:&apos;0px&apos;&#125;,1000); </div><div class="line">&#125; moveX(); </div><div class="line"></div><div class="line">$(&apos;#btn1&apos;).click(function()&#123; </div><div class="line">$(&apos;.wrap div&apos;).stop(); // 停止当前动画,沿路返回起点，若是返回过程中再点击，会暂停在路中 </div><div class="line">clearInterval(); </div><div class="line">&#125;) </div><div class="line"></div><div class="line">$(&apos;#btn2&apos;).click(function()&#123; </div><div class="line">$(&apos;.wrap div&apos;).stop(true); // 停止所有动画 去的路程中点击停止会直接到达终点，若是返回过程中再点击，会暂停在路中 </div><div class="line">&#125;) </div><div class="line"></div><div class="line">$(&apos;#btn3&apos;).click(function()&#123; </div><div class="line">$(&apos;.wrap div&apos;).stop(true,true); // 停止所有动画 ，去的路程中点击停止会直接到达终点，若是返回过程中再点击，会停止到在起点 </div><div class="line">&#125;) </div><div class="line"></div><div class="line">// .stop() // 停止当前动画 </div><div class="line">// .stop(true) // 停止所有动画 </div><div class="line">// .stop(true,true) // 停止所有动画，到达动画终点 </div><div class="line">// .stop(false,true) //停止当前动画，到达动画终点，然后进行下一动画。</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;div id=&quot;panel&quot; style=&quot;width: 60px;height: 22px;background-color: #eee;border: 1px solid #abcdef;font-size: 12px;&quot;&gt;呵呵&lt;/div&gt;</div><div class="line">&lt;script&gt; </div><div class="line">    $(&quot;#panel&quot;).hover(</div><div class="line">        function() &#123;</div><div class="line">        $(this).stop().animate(&#123;height: &quot;150&quot;&#125;, 200);//事件先停止当前的动画，然后执行后面的动画</div><div class="line">        &#125;,function() &#123;</div><div class="line">        $(this).stop().animate(&#123;height: &quot;22&quot;&#125;, 300);</div><div class="line">    &#125;);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/29/jquery随笔/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/29/my-first-blog/" class="archive-article-date">
-  	<time datetime="2017-09-29T07:35:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-29</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/09/29/my-first-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">&#39;my-first-blog&#39;</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/29/my-first-blog/">&#39;my-first-blog&#39;</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -241,8 +371,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
